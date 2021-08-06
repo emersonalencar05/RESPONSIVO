@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>ATIVIDADE</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+           $(".box").click(function (){
+              $(this).fadeOut(1000);
+           });
+           $("#btretomar").click(function(){
+               $(".box").fadeIn(2000);
+           });
+        });
+     </script>
+</head>
+<body>
+
+    <section>
+        <img class="box" src="useimage1.jpg">
+        <img class="box" src="useimage2.jpg">
+        <img class="box" src="useimage3.jpg">
+        <img class="box" src="useimage4.jpg">
+
+        <div class="box5">
+            <button id="btretomar">R E T O R N A R</button>
+        </div>
+    </section>
+
+</body>
+</html>
